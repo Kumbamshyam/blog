@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Name</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- jquery plugin -->
+
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="css/froala_editor.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet"
+        type="text/css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+    <!-- <link href="../css/froala_style.min.css" rel="stylesheet" type="text/css" /> -->
+
+
+
+    <!-- external css -->
+    <link rel="stylesheet" href='/css/index/index.css'>
+    <link rel="stylesheet" href='/css/navbar/navbar.css'>
+    <link rel="stylesheet" href='/css/admin/admin.css'>
+</head>
+
+<body>
+
+
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky bg-white border-end">
+
+        <div class="container ">
+            <a href="#" class="navbar-brand">
+                <!-- <img src="./assets/images/logo/logo-dark.svg" alt="Logo"> -->
+                <h3>Blog</h3>
+            </a>
+
+            <!-- secondary -->
+            <ul class="navbar-nav navbar-nav-secondary order-lg-3">
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link nav-icon" role="button" data-bs-toggle="collapse" data-bs-target="#userNav"
+                        aria-expanded="false" href='/'>
+                        <img src="images/icons/user-solid.svg" alt="">
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-hover d-none d-lg-block">
+                    <a class="nav-link nav-icon" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false" href='#'>
+                        <img src="images/icons/user-solid.svg" alt="">
+
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item " href="./account.html">Dashboard</a></li>
+                        <li><a class="dropdown-item " href="./account-settings.html">Settings</a></li>
+                        <li><a class="dropdown-item " href="./account-orders.html">Orders</a></li>
+                        <li><a class="dropdown-item " href="./account-billing.html">Billing</a></li>
+                        <li><a class="dropdown-item text-red" href="#">Log Out</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link nav-icon" href="#" role="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="bi bi-list"></span>
+                    </a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                        class="btn btn-outline-light rounded-pill ms-2">
+                        Buy Cube
+                    </a>
+                </li>
+            </ul>
+
+            <!-- primary -->
+            <div class="collapse navbar-collapse" id="navbar" data-bs-parent="#mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Landings
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown-1">
+                            <li><a class="dropdown-item " href="./startup.html">Startup</a></li>
+                            <li><a class="dropdown-item " href="./saas.html">Saas</a>
+                            </li>
+                            <li><a class="dropdown-item " href="./coworking.html">Coworking</a></li>
+                            <li><a class="dropdown-item " href="./job-board.html">Job Board</a></li>
+                            <li><a class="dropdown-item " href="./agency.html">Agency</a>
+                            </li>
+                            <li><a class="dropdown-item " href="./blog.html">Blog</a>
+                            </li>
+                            <li><a class="dropdown-item " href="./product.html">Product</a></li>
+                            <li><a class="dropdown-item " href="./app.html">App</a>
+                            </li>
+                            <li><a class="dropdown-item " href="./shop.html">Shop</a>
+                            </li>
+                            <li><a class="dropdown-item " href="./event.html">Event</a></li>
+                            <li><a class="dropdown-item " href="./course.html">Course</a>
+                            </li>
+                            <li><a class="dropdown-item " href="./service.html">Service</a></li>
+                            <li><a class="dropdown-item " href="./software.html">Software</a></li>
+                            <li><a class="dropdown-item " href="./documentation.html">Documentation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-2" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown-2">
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <div class="p-4">
+                                        <span class="dropdown-label">Company</span>
+                                        <a class="dropdown-item " href="./about.html">About</a>
+                                        <a class="dropdown-item " href="./pricing.html">Pricing</a>
+                                        <a class="dropdown-item " href="./faq.html">FAQ</a>
+                                        <a class="dropdown-item " href="./terms.html">Terms</a>
+                                        <a class="dropdown-item " href="./services.html">Services</a>
+                                        <a class="dropdown-item " href="./job-listing.html">Job Listing</a>
+                                        <a class="dropdown-item " href="./job-post.html">Job Post</a>
+                                        <span class="dropdown-label">Portfolio</span>
+                                        <a class="dropdown-item " href="./portfolio-grid.html">Grid</a>
+                                        <a class="dropdown-item " href="./portfolio-list.html">List</a>
+                                        <a class="dropdown-item " href="./case-study.html">Case Study</a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-4">
+                                        <span class="dropdown-label">Blog</span>
+                                        <a class="dropdown-item active" href="./blog-listing.html">Listing</a>
+                                        <a class="dropdown-item " href="./blog-post.html">Post</a>
+                                        <span class="dropdown-label">Contact</span>
+                                        <a class="dropdown-item " href="./contact.html">Classic</a>
+                                        <a class="dropdown-item " href="./contact-location.html">Location</a>
+                                        <span class="dropdown-label">Utilities</span>
+                                        <a class="dropdown-item " href="./404.html">404</a>
+                                        <a class="dropdown-item " href="./coming-soon.html">Coming Soon</a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                                        class="card card-arrow inverted bg-green">
+                                        <div class="card-footer mt-auto">
+                                            <h4 class="lead lh-3 fw-light">Buy Cube</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-3" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown-3">
+                            <li><a class="dropdown-item " href="./account.html">Dashboard</a></li>
+                            <li><a class="dropdown-item " href="./account-settings.html">Settings</a></li>
+                            <li><a class="dropdown-item " href="./account-orders.html">Orders</a></li>
+                            <li><a class="dropdown-item " href="./account-billing.html">Billing</a></li>
+                            <li><a class="dropdown-item " href="./sign-in.html">Sign
+                                    in</a></li>
+                            <li><a class="dropdown-item " href="./register.html">Register</a></li>
+                            <li><a class="dropdown-item " href="./forgot-password.html">Forgot Password</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-4" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown-4">
+                            <li><a class="dropdown-item " href="./shop-product.html">Product</a></li>
+                            <li class="dropend dropend-hover">
+                                <a class="dropdown-item dropdown-toggle  " href="#" id="navbarDropend-1"
+                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                    data-bs-auto-close="outside">Listing</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropend-1">
+                                    <li><a class="dropdown-item " href="./shop-listing.html">Full width</a></li>
+                                    <li><a class="dropdown-item " href="./shop-listing-sidebar.html">Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item " href="./shop-cart.html">Cart</a></li>
+                            <li><a class="dropdown-item " href="./shop-checkout.html">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-5" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Docs
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-detailed" aria-labelledby="navbarDropdown-5">
+                            <li><a class="dropdown-item " href="./docs/index.html">
+                                    <span>
+                                        <i class="bi bi-book"></i>
+                                        Get Started
+                                        <small>Customising and building</small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item " href="./docs/accordion.html">
+                                    <span>
+                                        <i class="bi bi-grid"></i>
+                                        Components
+                                        <small>Full list of components</small>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                            class="nav-link text-dark">Buy Cube</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- mobile user menu -->
+            <div class="collapse account-collapse" id="userNav" data-bs-parent="#mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Billing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-red" href="#">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="container writing-section">
+        <section>
+            <h1 class="text-center ">Start Writing</h1>
+        </section>
+
+        <form action="/posts/new" method="post" id="formdata">
+
+            <div class="form-floating my-3">
+                <input type="title" class="form-control" id="floatingInputValue" placeholder="Enter Title" name="title">
+                <label for="floatingInputValue">Title</label>
+            </div>
+
+            <div class="form-floating my-3">
+                <input type="description" class="form-control" id="heading" placeholder="Enter Title"
+                    name="description">
+                <label for=" floatingInputValue">Description</label>
+            </div>
+
+            <textarea id="textarea" class="fr-view" name="content" type="text" contenteditable="true">
+                </textarea>
+    </div>
+
+    <button type="submit" class="mt-3 float-end btn btn-success">publish</button>
+    <button type="button" class="mt-3 mx-2 float-end btn btn-primary" id="publishBtn">create</button>
+    </form>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/node_modules/wysiwyg-editor-node-sdk/lib/image.js"></script>
+<script src="/node_modules/wysiwyg-editor-node-sdk/lib/utils/disk.management.js"></script>
+<script>
+
+</script>
+<script>
+
+    new FroalaEditor('#textarea', {
+        // Set the image upload URL.
+        imageUploadURL: '/upload_image',
+        imageUploadParams: {
+            id: 'my_editor',
+        },
+        // imageDeleteURL: '/delete_image',
+        // fileUploadParam: 'file_name',
+        // allowedAttrs: ['title', 'href', 'alt', 'src', 'style', 'name'],
+        autosave: true,
+        imageStyles: {
+            class1: 'Class 1',
+            class2: 'Class 2'
+        },
+        // imageEditButtons: ['imageReplace', 'imageAlign', 'imageRemove', '|', 'imageLink', 'linkOpen', 'linkEdit', 'linkRemove', '-', 'imageDisplay', 'imageStyle', 'imageAlt', 'imageSize'],
+
+        // imageManagerLoadURL: '/load_images',
+        // imageManagerDeleteURL: "/delete_image",
+        // imageManagerDeleteMethod: "POST",
+        events: {
+            // 'image.uploaded': function (response) {
+            //     console.log(this);
+            // },
+            'image.inserted': function ($img, response) {
+                let images = document.getElementsByTagName("img")
+                for (i = 0; i < images.length; i++) {
+                    images[i].setAttribute("loading", "lazy")
+                }
+            },
+            'image.removed': async function ($img) {
+                let data = {
+                    src: $img.attr("src")
+                }
+                console.log("im out "+ data.src);
+
+                try {
+
+                    console.log("im out of delete fun");
+                    await fetch("/delete_image", {
+                        method: 'POST',
+                        body: JSON.stringify(data),
+                        headers: new Headers({
+                            'Content-Type': 'application/json; charset=UTF-8'
+                        })
+                    }).then((res) => {
+                        res.json();
+                    })
+                        .then((myJson) => {
+                            console.log(myJson);
+
+                        })
+                } catch (error) {
+                    console.log(error);
+                }
+
+            },
+            //         'image.removed': function (img) {
+            //     $.ajax({
+            //     //   Request method.
+            //       method: "POST",
+
+            //     //   Request URL.
+            //       url: "/delete_image",
+
+            //     //   Request params.
+            //       data: {
+            //         src: img.attr('src')
+            //     }})
+            //     .done (function () {
+            //         console.log ('image was deleted');
+            //     })
+            //     .fail (function (err) {
+            //       console.log ('image delete problem: ' + JSON.stringify(err));
+            //     })
+            //   }
+            //   ,
+
+            // 'image.removed': function($img) {
+            //     var xhttp = new XMLHttpRequest();
+            //     xhttp.onreadystatechange = function () {
+
+            //         // Image was removed.
+            //         if (this.readyState == 4 && this.status == 200) {
+            //             console.log('image was deleted' + $img.attr('src'));
+            //         }
+            //     };
+            //     xhttp.open("POST", "/delete_image", true);
+            //     console.log('xhttp post over')
+            //     let data = {
+            //         src: $img.attr('src')
+            //     }
+            //     xhttp.send(JSON.stringify(data));
+            //     console.log(JSON.stringify(data))
+            // },
+
+
+
+            // Catch video removal from the editor.
+            // 'video.removed': function ($video) {
+            //     $.ajax({
+            //         // Request method.
+            //         method: "POST",
+
+            //         // Request URL.
+            //         url: "/delete_video",
+
+            //         // Request params.
+            //         data: {
+            //             src: $video.attr('src')
+            //         }
+            //     })
+            //         .done(function (data) {
+            //             console.log('video was deleted');
+            //         })
+            //         .fail(function (err) {
+            //             console.log('video delete problem: ' + JSON.stringify(err));
+            //         })
+            // },
+
+
+
+            // Catch file removal from the editor.
+            'file.unlink': function (link) {
+                $.ajax({
+                    // Request method.
+                    method: "POST",
+
+                    // Request URL.
+                    url: "/delete_file",
+
+                    // Request params.
+                    data: {
+                        src: link.getAttribute('href')
+                    }
+                })
+                    .done(function (data) {
+                        console.log('file was deleted');
+                    })
+                    .fail(function (err) {
+                        console.log('file delete problem: ' + JSON.stringify(err));
+                    })
+            }
+
+            // ,
+            // 'image.error': function (error, response) {
+            //     // Do something here.
+            //     // this is the editor instance.
+            //     console.log(this);
+            // }
+        },
+        fileUploadURL: '/upload_file',
+        fileUploadParams: {
+            id: 'my_editor'
+        }
+
+
+        // events : { 
+        // Catch image removal from the editor.
+        //    }
+    })
+
+
+    // let image_s = document.getElementsByTagName('img')
+    // image(image_s)
+
+    // let data = {
+    //     name: 'Sammy'
+    // }
+    // let fetchData =
+    // }
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<!-- <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/js/froala_editor.pkgd.min.js"></script> -->
+<script src="/js/create.js"></script>
