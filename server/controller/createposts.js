@@ -4,16 +4,16 @@ require('../db/dbconnection')
 
 exports.posts =  async (req, res) => {
 
-    const { title, description, content } = req.body
-    console.log(req.body)
+    const { posters, title, description, content } = req.body
+    console.log(posters, title, description, content)
 
     try {
 
-        const postdata = new postschema({ title, description, content })
+        const postdata = new postschema({posters, title, description, content })
 
         await postdata.save()
 
-        // console.log(req.body)
+        console.log("data has recieved successfully")
 
         res.redirect('/')
 

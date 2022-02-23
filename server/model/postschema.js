@@ -2,7 +2,10 @@ const mongoose = require('mongoose');
 
 
 const postschema = new mongoose.Schema({
-
+    posters:{
+        type: 'string',
+        required: true
+    },
     title: {
         type: 'string',
         required: true

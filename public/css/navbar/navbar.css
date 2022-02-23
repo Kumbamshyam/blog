@@ -10,7 +10,7 @@
 }
 
 .navbar {
-  padding: rem(32) 0;
+  padding: 10px 0;
 }
 
 .navbar-sticky {
@@ -18,7 +18,7 @@
           transform: translateY(0%);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  position: fixed;
+  position: fixed !important;
   top: 0;
   right: 0;
   bottom: auto;
@@ -61,10 +61,6 @@
 
 .navbar-active .navbar-light {
   background: #ffffff;
-}
-
-.navbar-nav {
-  margin-top: rem(16);
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -290,5 +286,10 @@
     margin: 0 0 0 rem(10);
     opacity: 0;
   }
+}
+
+nav.navbar.navbar-expand-lg.navbar-sticky.bg-white.border-end {
+  border-bottom: 2px solid black;
+  padding: 20px 0;
 }
 /*# sourceMappingURL=navbar.css.map */

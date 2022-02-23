@@ -22,6 +22,7 @@ const registration_controller = require("../controller/registration")
 const login_controller = require("../controller/login")
 const createposts_controller = require("../controller/createposts")
 const showposts_controller = require("../controller/showposts")
+const adminshowposts_controller = require("../controller/adminshowpost")
 const articles_controller = require("../controller/artciles")
 
 
@@ -29,14 +30,22 @@ const articles_controller = require("../controller/artciles")
 // routers
 router.post('/registration', urlencodedParser, registration_controller.registration)
 router.post('/login', urlencodedParser, login_controller.login)
-router.post('/posts/new', urlencodedParser, createposts_controller.posts)
+router.post('/admin/posts', urlencodedParser, createposts_controller.posts)
 router.get('/', urlencodedParser, showposts_controller.showposts)
 router.get('/post/:id',urlencodedParser, articles_controller.articles );
 
 
-router.get('/create', function (req, res) {
+// admin router
+router.get('/admin', urlencodedParser, adminshowposts_controller.adminshowposts)
+// router.get('/admin', urlencodedParser, adminshowposts_controller.adminshowposts)
+
+router.get('/admin/posts/create', function (req, res) {
     res.render('create')
 })
+
+// router.get('/admin', function(req, res){
+//     res.redirect('admin/adminshowpost')
+// })
 
 
 

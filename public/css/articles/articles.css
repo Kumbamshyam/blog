@@ -1,0 +1,150 @@
+.cards-containers {
+  padding: 10px;
+  background: #ffffffbf;
+  border-radius: 5px;
+}
+
+.page-content {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.article-poster {
+  margin-top: 50px;
+  height: 500px;
+}
+
+.text-muted {
+  margin-left: 5px;
+}
+
+.nav-item .readmorelink {
+  text-align: left;
+  font-size: 15px;
+  color: blue;
+}
+
+@media (min-width: 992px) {
+  .pe-lg-10 {
+    padding-right: 0rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-link {
+    padding-left: 0 !important;
+    padding-right: 0rem !important;
+    margin-left: 5px;
+  }
+}
+
+.eyebrow {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eyebrow strong {
+  margin-right: 5px;
+  text-transform: none;
+}
+
+.eyebrow p {
+  font-size: 10px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.asideContainer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: 300px;
+  height: 1000px;
+  margin-top: 50px;
+}
+
+.share-buttons li {
+  padding-left: 10px;
+}
+
+#u_0_0_AK:nth-child(1) {
+  background: red;
+}
+
+.asidebar {
+  position: absolute;
+  top: 0;
+  padding-top: 30px;
+}
+
+ul.share-buttons {
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li {
+  display: inline;
+}
+
+ul.share-buttons .sr-only {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: auto;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card .title {
+  color: grey;
+  font-size: 18px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.card button:hover, .card a:hover {
+  opacity: 0.7;
+}
+
+.card-body a h1 {
+  font-family: roboto, arial, helvetica;
+  text-align: inherit;
+  color: rgba(0, 0, 0, 0.68);
+}
+/*# sourceMappingURL=articles.css.map */

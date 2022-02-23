@@ -38,6 +38,13 @@
     :root {
         scroll-behavior: smooth
     }
+
+
+}
+
+
+html{
+    scroll-behavior: smooth;    
 }
 
 body {
@@ -441,7 +448,12 @@ progress {
 .display-1 {
     font-size: calc(1.545rem + 3.54vw);
     font-weight: 500;
-    line-height: 1.25
+    line-height: 1.25;
+    font-size: 4.2rem;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 1200px) {
@@ -4390,13 +4402,20 @@ textarea.form-control-lg {
 }
 
 .navbar {
-    position: relative;
+    // position: absolute;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-top: .5rem;
-    padding-bottom: .5rem
+    transform: translateY(0%) ;
+  transition: all 0.4s ease-in-out;
+  position: fixed !important;
+  top: 0;
+  right: 0; 
+  bottom: auto;
+  left: 0;
+  opacity: 1;
+  z-index: 1040;
 }
 
 .navbar>.container,.navbar>.container-fluid,.navbar>.container-sm,.navbar>.container-md,.navbar>.container-lg,.navbar>.container-xl,.navbar>.container-xxl {
@@ -14765,7 +14784,7 @@ textarea.form-control-lg {
 .bi {
     display: inline-block;
     width: 1em;
-    height: 1em;
+    height: 25px;
     line-height: 1em
 }
 
@@ -16329,7 +16348,7 @@ hr.or::before {
 
 .navbar-nav .nav-icon {
     display: flex;
-    width: 3rem;
+    width: 6rem;
     height: 3rem;
     padding: 0;
     align-items: center;
@@ -19675,4 +19694,3 @@ kbd {
     font-size: inherit
 }
 
-/*# sourceMappingURL=index.bundle.css.map*/

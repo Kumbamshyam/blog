@@ -20,7 +20,13 @@ body {
 .user {
   width: 90%;
   max-width: 440px;
-  margin: 10vh auto;
+  margin: 15px auto;
+}
+
+.user-container {
+  position: absolute;
+  margin-top: 150px;
+  inset: 0 0 0 0;
 }
 
 .user__header {

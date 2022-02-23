@@ -22,7 +22,16 @@ body {
 .user {
     width: 90%;
     max-width: 440px;
-    margin: 10vh auto;
+    margin: 15px auto;
+}
+
+
+.user-container{
+    position: absolute;
+    margin-top: 150px;
+    // top: 0;
+    // right: 0; 
+    inset: 0 0 0 0 ;
 }
 
 .user__header {
@@ -127,4 +136,8 @@ body {
     100% {
         background-position: 0 0
     }
+}
+
+.alert-container{
+    
 }
